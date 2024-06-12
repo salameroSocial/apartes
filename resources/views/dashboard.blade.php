@@ -7,7 +7,7 @@
     <br><br>
 
     <div class="container mx-auto p-8 bg-white">
-        <header class="mb-8">
+        <header class="mb-8 hidden sm:block">
             <h1 class="text-3xl font-bold text-center text-blue-600">Enlaces rápidos:</h1>
             <nav class="mt-4 flex justify-center">
                 <a href="#" class="mr-6 text-lg text-gray-700 hover:text-blue-600">Inicio</a>

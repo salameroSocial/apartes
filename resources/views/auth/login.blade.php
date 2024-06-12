@@ -222,7 +222,7 @@
                         <div class="form">
                             <label class="label" for="email">Email</label>
                             <input id="email" name="email" type="email" autocomplete="email" required>
-                            <label class="label" for="password">Cotnraseña</label>
+                            <label class="label" for="password">Contraseña</label>
                             <input type="password" id="password" name="password" autocomplete="current-password"
                                 required>
                             <input class="submit" type="submit" id="submit" value="Iniciar Sesión">
