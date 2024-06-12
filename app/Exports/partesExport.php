@@ -7,7 +7,7 @@ use Maatwebsite\Excel\Concerns\FromQuery;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 
-class partesExport implements FromCollection, WithHeadings
+class PartesExport implements FromCollection, WithHeadings
 {
     protected $filters;
 
