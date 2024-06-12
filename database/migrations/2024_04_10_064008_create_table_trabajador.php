@@ -34,36 +34,3 @@ return new class extends Migration {
     }
 };
 
-
-
-        // \App\Models\Trabajador::create([
-        //     [
-        //         'nombre' => 'Juan',
-        //         'apellidos' => 'García Pérez',
-        //         'id_empresa' => 'EM001',
-        //         'rango' => 'peon',
-        //         'created_at' => now(),
-        //         'updated_at' => now(),
-        //     ],
-        //     [
-        //         'nombre' => 'María',
-        //         'apellidos' => 'Martínez López',
-        //         'id_empresa' => 'EM002',
-        //         'rango' => 'oficial',
-        //         'created_at' => now(),
-        //         'updated_at' => now(),
-        //     ],
-        // ]);
-
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('trabajadors');
-    }
-};
