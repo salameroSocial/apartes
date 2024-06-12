@@ -3,7 +3,7 @@
         <h2 class="text-2xl font-semibold my-6">Editar Cliente</h2>
     </x-slot>
 
-    <div class="container mx-auto">
+    <div class="container mx-auto p-4">
         <form action="{{ route('clientes.update', $cliente->id) }}" method="POST">
             @csrf
             @method('PUT')

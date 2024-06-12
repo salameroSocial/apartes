@@ -1,7 +1,7 @@
 <x-app-layout>
-    <div class="flex bg-gray-200 min-h-screen">
+    <div class="flex flex-col md:flex-row bg-gray-200 min-h-screen">
         <!-- Sidebar de Filtros -->
-        <aside class="w-1/6 bg-gray-200 p-6 shadow-md">
+        <aside class="w-full md:w-1/6 bg-gray-200 p-6 shadow-md">
             <h2 class="text-2xl font-semibold mb-4">Filtros</h2>
             <form id="filter-form">
                 <div class="grid grid-cols-1 gap-4">
@@ -107,7 +107,7 @@
         </aside>
 
         <!-- Contenedor Principal -->
-        <main class="flex-1 bg-white p-6 shadow-md">
+        <main class="flex-1 bg-white p-6 shadow-md mt-4 md:mt-0">
             <h2 class="text-2xl font-semibold mb-4">Vista Previa de los Partes</h2>
             <div id="preview-container">
                 <!-- Aquí se cargará la vista previa de los partes -->
