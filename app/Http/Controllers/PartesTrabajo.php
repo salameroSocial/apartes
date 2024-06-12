@@ -7,7 +7,7 @@ use App\Models\Departamento;
 use App\Models\Trabajador;
 use App\Models\Parte;
 use Illuminate\Http\Request;
-use App\Exports\PartesExport;
+use App\exports\PartesExport;
 use App\Models\Field;
 use App\Models\ParteField;
 use Maatwebsite\Excel\Facades\Excel;
