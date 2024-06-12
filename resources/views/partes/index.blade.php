@@ -43,7 +43,7 @@
                     <span class="sm:hidden font-bold">Realizado por:</span>
                     {{ $parte->trabajador ? $parte->trabajador->nombre . ' ' . $parte->trabajador->apellidos : 'No asignado' }}
                 </div>
-                <div class="flex flex-col sm:w-1/6 px-2 py-2 sm:flex-row sm:justify-center ">
+                <div class="flex flex-col sm:w-1/6 px-2 py-2 sm:flex-row sm:justify-center text-center ">
                     <a href="{{ route('partes.show', $parte->id) }}" class="mb-2 sm:mb-0 sm:mr-2 text-blue-100 hover:text-white hover:bg-blue-400 bg-blue-500 px-4 py-2 rounded">Ver</a>
                     <a href="{{ route('partes.editar', $parte->id) }}" class="mb-2 sm:mb-0 sm:mr-2 text-yellow-100 hover:text-white hover:bg-yellow-400 bg-yellow-500 px-4 py-2 rounded">Editar</a>
                     <form action="{{ route('partes.borrar', $parte->id) }}" method="POST" class="inline">

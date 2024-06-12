@@ -48,13 +48,16 @@
                 @foreach ($empleados as $empleado)
                 <div class="bg-gray-300 border-4 border-white text-center">
                     <li class="border px-4 py-2">
-                        <p>Empleado:</p>{{ $empleado->nombre }} {{ $empleado->apellidos }}
+                        <p>Empleado:</p>
+                        <p class="font-bold">{{ $empleado->nombre }} {{ $empleado->apellidos }}</p>
                     </li>
                     <li class="border px-4 py-2">
-                        <p>Rango:</p>{{ $empleado->rango }}
+                        <p>Rango:</p>
+                        <p class="font-bold">{{ $empleado->rango }}</p>
                     </li>
                     <li class="border px-4 py-2">
-                        <p>Precio/h:</p>{{ $empleado->precio_hora }}€
+                        <p>Precio/h:</p>
+                        <p class="font-bold">{{ $empleado->precio_hora }}€</p>
                     </li>
                     <li class="border px-4 py-2 flex flex-col md:flex-row justify-center">
                         <a href="{{ route('empleados.edit', $empleado->id) }}" class="ml-0 md:ml-2 mt-2 md:mt-0 text-yellow-100 hover:text-white hover:bg-yellow-400 bg-yellow-500 px-4 py-2 rounded">Editar</a>
