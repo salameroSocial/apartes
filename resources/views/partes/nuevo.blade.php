@@ -94,6 +94,7 @@
             <div class="mb-4">
                 <label for="realizado_por" class="block text-gray-700 font-bold mb-2">Realizado por:</label>
                 <select id="realizado_por" name="realizado_por" class="w-full px-4 py-2 border rounded-md bg-gray-50 focus:outline-none focus:border-blue-500">
+                    <option value="">Seleccione trabajador</option>
                     @foreach ($empleados as $empleado)
                     <option value="{{ $empleado->id }}">
                         {{ $empleado->nombre }}

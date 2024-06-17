@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\Exports\PartesExport;
 use App\Models\Field;
 use App\Models\ParteField;
+use Illuminate\Support\Facades\Auth;
 use Maatwebsite\Excel\Facades\Excel;
 
 class PartesTrabajo extends Controller
@@ -84,6 +85,7 @@ class PartesTrabajo extends Controller
             $validatedData['cliente'] = $nuevoCliente->id;
         }
 
+
         // Crear un nuevo Parte con los datos validados
         $parte = Parte::create($validatedData);
 
@@ -96,7 +98,9 @@ class PartesTrabajo extends Controller
             $parte->cliente_id = "0";
         }
 
-        $empleado = Trabajador::where('id', $request->realizado_por)->first();
+        $correoUsuario = Auth::user()->email;
+
+        $parte->subido_por = $correoUsuario;
 
         // Guardar campos dinámicos
         $fields = Field::all();
@@ -182,11 +186,13 @@ class PartesTrabajo extends Controller
             'estado_trabajador' => 'nullable|string',
             'detalles_otros' => 'nullable|string',
         ]);
+        // dd($request->all());
         // Buscar el parte a actualizar
         $empleado = Trabajador::find($request->realizado_por);
-
+        // dd($empleado->all());
         if ($empleado) {
-            $parte->trabajador_id = $empleado->nombre . ' ' . $empleado->apellidos;
+            // $parte->trabajador_id = $empleado->nombre . ' ' . $empleado->apellidos;
+            $parte->trabajador_id = $empleado->id;
         } else {
             $parte->trabajador_id = null; // o cualquier valor por defecto
         }

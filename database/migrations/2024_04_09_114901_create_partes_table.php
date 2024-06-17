@@ -33,6 +33,7 @@ return new class extends Migration
             $table->string('estado_trabajador')->nullable();
             $table->text('detalles_otros')->nullable();
             $table->text('trabajador_id')->nullable();
+            $table->text('subido_por')->nullable();
             $table->timestamps();
         });
 
