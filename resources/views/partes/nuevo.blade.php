@@ -30,7 +30,7 @@
             @csrf
             <!-- Cliente -->
             <div class="header_form">
-                <img class="img_header" src="http://localhost/proyectos/gestionPartes/storage/app/public/logo.png" alt="logotipo de somontano social">
+                <img class="img_header" src="http://localhost/proyectos/gestionPartes/storage/app/public/logo.png" alt="logotipo de aplicacion">
                 <h1 class="title">Parte de la brigada de servicios múltiples</h1>
             </div>
             <div class="mb-4">

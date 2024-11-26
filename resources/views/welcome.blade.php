@@ -48,7 +48,7 @@
             <div class="div text-center">
                 <x-application-logo></x-application-logo>
                 <br>
-                <h1 class="text-4xl font-bold mb-4">Gestión de partes Somontano Social</h1>
+                <h1 class="text-4xl font-bold mb-4">Gestión de partes de trabajo</h1>
                 <p class="text-lg text-gray-700 mb-8">Identifícate para continuar.</p>
                 <div>
                     @auth

@@ -205,7 +205,6 @@
 
                         </div> --}}
 
-                        {{-- <div class="eula">Programa de gestión de partes de Somontano Social</div> --}}
                     </div>
                     <div class="right">
                         <svg viewBox="0 0 320 300">

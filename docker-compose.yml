@@ -31,10 +31,10 @@ services:
     container_name: mysql
     restart: unless-stopped
     environment:
-      MYSQL_DATABASE: laravel
-      MYSQL_USER: laravel
-      MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: partes
+      MYSQL_USER: partes
+      MYSQL_PASSWORD: Ssocial_2024%
+      MYSQL_ROOT_PASSWORD: Ssocial_2024%
     ports:
       - "3306:3306"
     volumes:
